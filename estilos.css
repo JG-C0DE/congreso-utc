@@ -71,6 +71,7 @@
     .nav-link {
         color: var(--text-light) !important;
         font-weight: 500;
+        font-size: 15px !important;
         margin: 0 1rem;
         position: relative;
         transition: all 0.3s ease;
@@ -420,7 +421,7 @@
             position: absolute;
             bottom: -10px;
             left: 0;
-            width: 100px;
+            width: 50px;
             height: 4px;
             background-color: var(--gray-300);
         }
@@ -429,10 +430,11 @@
             display: flex;
             align-items: center;
             margin-bottom: 1rem;
-            background-color: rgba(244, 244, 244, 0.8);
+            background-color: rgba(248, 248, 248, 0.8);
             padding: 0.8rem 1.2rem;
             border-radius: 8px;
             transition: all 0.3s ease;
+            
         }
 
         .congress-feature:hover {
@@ -464,7 +466,7 @@
         }
 
         .congress-stat {
-            background-color: rgba(244, 244, 244, 0.8);
+            background-color: rgba(248, 248, 248, 0.8);
             padding: 1rem;
             border-radius: 10px;
             text-align: center;
@@ -472,9 +474,9 @@
         }
 
         .congress-stat:hover {
-            transform: translateY(-10px);
-            background-color: white;
-            box-shadow: 0 6px 12px rgba(0,0,0,0.1);
+            transform: translatey(-10px);
+            background-color: rgba(251, 251, 251, 0.989);
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
         }
 
         .congress-stat-number {
@@ -607,7 +609,7 @@
  /* COSTO DE PARTICIPACION */
 
  .pricing-section {
-     background-color: rgb(255, 255, 255);
+     background-color: rgb(246, 246, 246);
      padding: 5rem 0;
  }
 
@@ -862,4 +864,5 @@
         text-align: center;
     }
 }
+
 
