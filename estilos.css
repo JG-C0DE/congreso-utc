@@ -104,17 +104,34 @@
     .hero-section {
         position: relative;
         background-image: 
-            linear-gradient(to bottom, rgba(255, 255, 255, 0) 60%, rgba(255, 255, 255, 0.6)), /* Degradado inferior */
-            url(img/25101.jpg); /* Imagen de fondo */
+            linear-gradient(to bottom, rgba(255, 255, 255, 0.649) 60%, rgba(255, 255, 255, 0.26)), /* Degradado inferior */
+            url(digital-picture-world-from-outer-space-fotor-20241129184944.jpg); /* Imagen de fondo */
         background-repeat: no-repeat;
         background-size: cover;
         background-position: bottom;
+    
         padding: 6rem 0 2rem;
     }
-    
+    #particles-js {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        z-index: 1;
+    }
+
+    .hero-content {
+        position: relative;
+        z-index: 2;
+        color: white;
+       
+    }
+  
     /* Título y Subtítulos */
     .hero-title-container {
         margin-bottom: 2.5rem;
+       
     }
 
     .hero-title {
@@ -298,6 +315,7 @@
             width: 100%;
             height: 100%;
             object-fit: cover;
+            object-position: left;
         }
 
         .circle-large {
@@ -320,13 +338,13 @@
             right: 50px;
             top: 380px;
         }
+        .circle-small img {
+            object-position: center;
+        }
 
        
 
-       /* Animaciones */
-.floating {
-    /* Eliminamos la animación CSS original */
-}
+  
 
 @keyframes floating {
     0% { transform: translateY(0); }
@@ -350,14 +368,14 @@
             .circle-large {
                 width: 300px;
                 height: 300px;
-                right: 50%;
+                right: 30%;
                 transform: translateX(50%);
             }
 
             .circle-medium {
                 width: 200px;
                 height: 200px;
-                right: 20%;
+                right: 14%;
                 top: 200px;
             }
 
@@ -386,7 +404,7 @@
             }
 
             .image-circles-container {
-                height: 300px;
+                height: 350px;
             }
 
             .circle-large {
@@ -411,7 +429,7 @@
         .congress-section {
             position: relative;
             background-color: rgb(255, 255, 255);
-            overflow: hidden;
+           
         }
 
       
@@ -466,7 +484,10 @@
             width: 100%;
             height: 100%;
             object-fit: cover;
+            border-radius: 10px;
             transition: transform 0.5s ease;
+          
+           
             
         }
 
@@ -509,11 +530,12 @@
         /* TEMAS Y BENEFICIOS DEL CONGRESO */
      
         .topics-section {
-            background-color: #f8f9fa;
+            background-color: rgb(246, 246, 246) !important;
             position: relative;
             overflow: hidden;
-        }
-
+            color: #ffffff;
+          }
+          
 
         .topic-card {
             background: white;
@@ -545,7 +567,7 @@
         }
 
         .benefit-item {
-            background: white;
+            background: rgb(246, 246, 246) !important;
             border-radius: 10px;
             transition: all 0.3s ease;
             border-left: 4px solid var(--accent-red);
@@ -591,8 +613,8 @@
         .carousel-item img {
             width: 100%;
             border-radius: 15px;
-            height: 558px;
-            object-fit: cover;
+            height: 450px;
+            object-fit: fill;
             object-position: top;
         }
 
@@ -618,7 +640,7 @@
  /* COSTO DE PARTICIPACION */
 
  .pricing-section {
-     background-color: rgb(246, 246, 246);
+     background-color: rgb(255, 255, 255);
      padding: 5rem 0;
  }
 
@@ -878,7 +900,7 @@
 
 /* Estilos para la sección de comités */
 .comites-section {
-    background: linear-gradient(135deg, #ffffff 0%, #ffffff 100%);
+    background-color: rgb(246, 246, 246) !important;
     position: relative;
     overflow: hidden;
 }
@@ -1262,5 +1284,4 @@
         justify-content: center;
         box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
     }
-
 
